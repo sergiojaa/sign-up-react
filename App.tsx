@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import backImage from './assets/Group 5.png';
-
+// import warningImage from './assets/react.svg'
 const initialState = {
   firstInput: '',
   secondInput: '',
@@ -45,12 +45,12 @@ function App() {
                 onChange={(e) => handleInputChange(e, 'firstInput')}
               />
               {!input.firstInput && (
-                <p className="mb-[20px] ml-[302px] text-[11px] font-medium italic text-right text-[#ff7979]">
+                  <p className="mb-[20px] ml-[302px] text-[11px] font-medium italic text-right text-[#ff7979]">
                   First name cannot be empty
                 </p>
               )}
               <input
-                className={`w-[460px] h-[56px] mb-[6px] mt-[40px] p-[15px_351px_15px_32px] rounded-[5px] border-2 ${
+                className={`w-[460px] h-[56px] mb-[6px] mt-[10px] p-[15px_351px_15px_32px] rounded-[5px] border-2 ${
                   input.secondInput ? 'border-white' : 'border-[#ff7979]'
                 } bg-white`}
                 type="text"
@@ -63,7 +63,7 @@ function App() {
                 </p>
               )}
               <input
-                className={`w-[460px] h-[56px] mb-[6px] mt-[40px] p-[15px_351px_15px_32px] rounded-[5px] border-2 ${
+                className={`w-[460px] h-[56px] mb-[6px] mt-[10px] p-[15px_351px_15px_32px] rounded-[5px] border-2 ${
                   input.thirdInput ? 'border-white' : 'border-[#ff7979]'
                 } bg-white`}
                 type="text"
@@ -76,7 +76,7 @@ function App() {
                 </p>
               )}
               <input
-                className={`w-[460px] h-[56px] mb-[6px] mt-[40px] p-[15px_351px_15px_32px] rounded-[5px] border-2 ${
+                className={`w-[460px] h-[56px] mb-[6px] mt-[10px] p-[15px_351px_15px_32px] rounded-[5px] border-2 ${
                   input.fourthInput ? 'border-black' : 'border-[#ff7979]'
                 } bg-white`}
                 type="text"
